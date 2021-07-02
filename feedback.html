@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Feedback xịn xò khách yêu - Toto Shop</title>
+    <link rel="icon" href="/image/logo.png">
+    <meta name="description" content="Toto Shop - Chuyên order quần áo xinh giá sinh viên">
+    <meta name="keywords" content="totoshop, oanhnguyen, silequanao, order, thuduc, tphcm">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/image/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/image/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/image/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/image/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/image/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/image/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/image/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/image/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/image/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/image/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/image/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <!--Replace with your tailwind.css once created-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.0/viewer.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
+
+    <style>
+        .work-sans {
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        #menu-toggle:checked+#menu {
+            display: block;
+        }
+
+        .hover\:grow {
+            transition: all 0.3s;
+            transform: scale(1);
+        }
+
+        .hover\:grow:hover {
+            transform: scale(1.02);
+        }
+    </style>
+
+</head>
+
+<body class="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal">
+
+    <!--Nav-->
+    <nav id="header"
+        class="w-full z-30 top-0 py-1 sticky z-50 bg-gradient-to-r from-green-200 via-blue-100 to-blue-200">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3">
+
+            <label for="menu-toggle" class="cursor-pointer md:hidden block">
+                <svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    viewBox="0 0 20 20">
+                    <title>menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </label>
+            <input class="hidden" type="checkbox" id="menu-toggle" />
+
+            <div class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1" id="menu">
+                <nav>
+                    <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+                        <li>
+                            <a class="flex inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                                href="/index.html">
+                                <img class="h-5 w-5 mr-1" src="/image/logo.png">
+                                Shop
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                                href="/feedback.html">
+                                <svg class="h-5 w-5 mr-1 text-red-500" width="24" height="24" viewBox="0 0 24 24"
+                                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                    <path d="M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7" />
+                                </svg>
+                                Khách yêuuu
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                                href="/bill.html">
+                                <svg class="h-5 w-5 mr-1 text-red-500" width="24" height="24" viewBox="0 0 24 24"
+                                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                    <path d="M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7" />
+                                </svg>
+                                Bill xịn xòoo
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="order-2 md:order-2 flex items-center" id="nav-content">
+                <a class="link mx-2" href="https://www.instagram.com/totoshop_99" target="_blank">
+                    <img src="/image/icon/icons8-instagram-24.svg">
+                </a>
+                <a class="link mx-2" href="fb://page/103299224504770">
+                    <img class="h-6" src="/image/icon/icons8-facebook.svg">
+                </a>
+                <a class="link mx-2" href="https://zalo.me/0763844070" target="_blank">
+                    <img src="/image/icon/icons8-zalo.svg">
+                </a>
+                <a class="link mx-2" href="https://www.tiktok.com/@_ku.pin" target="_blank">
+                    <img src="/image/icon/icons8-tiktok.svg">
+                </a>
+                <a class="link mx-2" href="https://shopee.vn/totoshop_99" target="_blank">
+                    <img src="/image/icon/icons8-shopee.svg">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Alternatively if you want to just have a single hero -->
+
+    <section class="w-full mx-auto bg-nordic-gray-light flex pt-2 md:pt-0 md:items-center bg-cover bg-center"
+        style="max-width:1600px;">
+
+        <div class="w-full md:w-1/3 xl:w-1/2 mx-auto my-6 border-2">
+            <div class="flex flex-col w-full justify-center items-start px-6 py-6 tracking-wide">
+                <div class="my-4 mx-auto">
+                    <img class="h-24" src="/image/logo.png">
+                </div>
+                <!-- <h1 class="text-black text-2xl font-bold text-gray-800 my-4 mx-auto ">ToTo Shop</h1> -->
+                <p class="flex text-lg text-justify inline-block my-2">
+                    <img class="h-6 mr-1" src="/image/gif/icons8-heart.gif">
+                    Chuyên order quần áo xinh - giá sinh viên
+                </p>
+                <p class="flex text-lg text-justify inline-block my-2">
+                    <img class="h-6 mr-1" src="/image/gif/half-heart--v2.gif">
+                    Tuyển sỉ đồng hành
+                </p>
+                <p class="flex text-lg text-justify inline-block my-2">
+                    <img class="h-6 mr-1" src="/image/gif/phonelink-ring--v2.gif">
+                    SĐT: 0336579815
+                </p>
+                <p class="flex text-lg text-justify inline-block my-2">
+                    <img class="h-6 mr-1" src="/image/gif/place-marker--v2.gif">
+                    Địa chỉ: Linh Trung, Thủ Đức, Tp. Hồ Chí Minh
+                </p>
+                <p class="flex text-lg text-justify inline-block my-2">
+                    <img class="h-6 mr-1" src="/image/gif/clock--v2.gif">
+                    Hàng order - Có hàng trong vòng 7-10 ngày
+                </p>
+                <p class="flex text-lg text-justify inline-block my-2">
+                    <img class="h-6 mr-1" src="/image/gif/truck--v2.gif">
+                    Giao hàng tận nơi trên toàn quốc, thanh toán khi nhận hàng. Giá: 20.000 - 35.000 tùy chỗ
+                </p>
+                <p class="flex text-lg text-justify inline-block my-2">
+                    <img class="h-6 mr-1" src="/image/gif/money--v2.gif">
+                    Nhận thanh toán MOMO, CHUYỂN KHOẢN
+                </p>
+                <p class="flex text-lg text-justify inline-block my-2">
+                    <img class="h-6 mr-1" src="/image/gif/stack-of-photos--v2.gif">
+                    Hình ảnh và sản phẩm thực tế cam kết đúng 98% do máy ảnh
+                </p>
+                <p class="flex text-lg text-justify inline-block my-2">
+                    <img class="h-6 mr-1" src="/image/gif/novel--v2.gif">
+                    Không mong 100 khách mua 1 lần chỉ mong 1 khách mua 100 lần
+                </p>
+                <p class="flex text-lg text-justify inline-block my-2">
+                    <img class="h-6 mr-1" src="/image/gif/honeymoon--v2.gif">
+                    Sinh ra là phụ nữ thì nhất định phải đẹp, không nhất định phải đẹp hơn người này người kia nhưng
+                    nhất định phải đẹp hơn chính mình mỗi ngày
+                </p>
+                <div class="flex text-xl inline-block mx-auto mt-2">
+
+                    <a class="link mx-2" href="https://www.instagram.com/totoshop_99" target="_blank">
+                        <img src="/image/icon/icons8-instagram-24.svg">
+                    </a>
+                    <a class="link mx-2" href="fb://page/103299224504770">
+                        <img class="h-6" src="/image/icon/icons8-facebook.svg">
+                    </a>
+                    <a class="link mx-2" href="https://zalo.me/0763844070" target="_blank">
+                        <img src="/image/icon/icons8-zalo.svg">
+                    </a>
+                    <a class="link mx-2" href="https://www.tiktok.com/@_ku.pin" target="_blank">
+                        <img src="/image/icon/icons8-tiktok.svg">
+                    </a>
+                    <a class="link mx-2" href="https://shopee.vn/totoshop_99" target="_blank">
+                        <img src="/image/icon/icons8-shopee.svg">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-8">
+
+        <div id="images" class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
+
+            <nav id="store" class="w-full z-30 top-0 px-6 py-1">
+                <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
+
+                    <a class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl "
+                        href="#">
+                        Feedback
+                    </a>
+                </div>
+            </nav>
+
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <img class="hover:grow hover:shadow-lg object-cover h-80 w-full" src="/image/product/1.jpg">
+            </div>
+
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <img class="hover:grow hover:shadow-lg object-cover h-80 w-full" src="/image/product/2.jpg">
+            </div>
+
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <img class="hover:grow hover:shadow-lg object-cover h-80 w-full" src="/image/product/3.jpg">
+            </div>
+
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <img class="hover:grow hover:shadow-lg object-cover h-80 w-full" src="/image/product/4.jpg">
+            </div>
+
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <img class="hover:grow hover:shadow-lg object-cover h-80 w-full" src="/image/product/5.jpg">
+            </div>
+
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <img class="hover:grow hover:shadow-lg object-cover h-80 w-full" src="/image/product/6.jpg">
+            </div>
+
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <img class="hover:grow hover:shadow-lg object-cover h-80 w-full" src="/image/product/7.jpg">
+            </div>
+
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <img class="hover:grow hover:shadow-lg object-cover h-80 w-full" src="/image/product/8.jpg">
+            </div>
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <img class="hover:grow hover:shadow-lg object-cover h-80 w-full" src="/image/product/9.jpg">
+            </div>
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <img class="hover:grow hover:shadow-lg object-cover h-80 w-full" src="/image/product/10.jpg">
+            </div>
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <img class="hover:grow hover:shadow-lg object-cover h-80 w-full" src="/image/product/11.jpg">
+            </div>
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <img class="hover:grow hover:shadow-lg object-cover h-80 w-full" src="/image/product/12.jpg">
+            </div>
+        </div>
+    </section>
+
+    <footer class="container mx-auto bg-white py-2 border-t border-gray-200">
+        <div class="container flex px-3 py-2 ">
+            <div class="mx-auto flex flex-wrap">
+                @TOTO SHOP
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.0/viewer.min.js"></script>
+<script>
+    const gallery = new Viewer(document.getElementById('images'), {
+        toolbar: {
+            reset: 4,
+            prev: 4,
+            play: {
+                show: 4,
+                size: 'large',
+            },
+            next: 4,
+        },
+    });
+</script>
+
+</html>
